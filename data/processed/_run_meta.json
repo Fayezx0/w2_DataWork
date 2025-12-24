@@ -1,0 +1,11 @@
+{
+  "timestamp_utc": "2025-12-23T09:37:53.041142+00:00",
+  "rows": {
+    "orders": 5250,
+    "users": 1000
+  },
+  "outputs": {
+    "orders": "C:\\Users\\fayez\\Downloads\\pf03-main\\data\\processed\\orders.parquet",
+    "users": "C:\\Users\\fayez\\Downloads\\pf03-main\\data\\processed\\users.parquet"
+  }
+}
