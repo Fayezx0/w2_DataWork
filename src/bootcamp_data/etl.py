@@ -1,5 +1,5 @@
 from __future__ import annotations
-
+from datetime import datetime, timezone
 import json
 import logging
 from dataclasses import asdict, dataclass
@@ -131,6 +131,7 @@ def write_run_meta(
     )
 
     meta = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
         "rows_in_orders_raw": int(len(orders_raw)),
         "rows_in_users": int(len(users)),
         "rows_out_analytics": int(len(analytics)),

@@ -1,11 +1,17 @@
 {
-  "timestamp_utc": "2025-12-23T09:37:53.041142+00:00",
-  "rows": {
-    "orders": 5250,
-    "users": 1000
-  },
-  "outputs": {
-    "orders": "C:\\Users\\fayez\\Downloads\\pf03-main\\data\\processed\\orders.parquet",
-    "users": "C:\\Users\\fayez\\Downloads\\pf03-main\\data\\processed\\users.parquet"
+  "timestamp": "2025-12-25T20:52:24.731469+00:00",
+  "rows_in_orders_raw": 5250,
+  "rows_in_users": 1000,
+  "rows_out_analytics": 5250,
+  "missing_created_at": 507,
+  "country_match_rate": 1.0,
+  "config": {
+    "root": "C:\\Users\\fayez\\bootcamp\\week2\\w2_DataWork",
+    "raw_orders": "C:\\Users\\fayez\\bootcamp\\week2\\w2_DataWork\\data\\raw\\orders.csv",
+    "raw_users": "C:\\Users\\fayez\\bootcamp\\week2\\w2_DataWork\\data\\raw\\users.csv",
+    "out_orders_clean": "C:\\Users\\fayez\\bootcamp\\week2\\w2_DataWork\\data\\processed\\orders_clean.parquet",
+    "out_users": "C:\\Users\\fayez\\bootcamp\\week2\\w2_DataWork\\data\\processed\\users.parquet",
+    "out_analytics": "C:\\Users\\fayez\\bootcamp\\week2\\w2_DataWork\\data\\processed\\analytics_table.parquet",
+    "run_meta": "C:\\Users\\fayez\\bootcamp\\week2\\w2_DataWork\\data\\processed\\_run_meta.json"
   }
 }
