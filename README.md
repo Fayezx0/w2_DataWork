@@ -62,8 +62,3 @@ The data flows through the project files as follows:
 ```
 
 ---
-
-## Tech Stack
-- **ETL**: Custom Python pipeline with strictly typed configs.
-- **Data**: Pandas for transformation, Parquet for efficient storage.
-- **Viz**: **Plotly Express** for interactive visualizations.
