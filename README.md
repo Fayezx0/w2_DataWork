@@ -1,3 +1,4 @@
+## Data Work project
 # 📊 E-Commerce Data Pipeline & Analysis
 
 A professional data workflow built with **Python**, **Pandas**, and **Plotly**. This project implements a robust ETL pipeline to clean raw transaction data and performs exploratory analysis to uncover revenue trends.
@@ -8,10 +9,12 @@ A professional data workflow built with **Python**, **Pandas**, and **Plotly**. 
 
 ### 1. Setup Environment
 ```bash
+git clone https://github.com/Fayezx0/w2_DataWork
+cd w2_DataWork
 python -m venv .venv
 source .\.venv\Scripts\activate
-pip install -r requirements.txt
-pip install -e .
+uv pip install -r requirements.txt
+uv pip install -e .
 ```
 
 ### 2. Run the Pipeline
