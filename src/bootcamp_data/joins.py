@@ -15,3 +15,4 @@ def safe_left_join(
 
     return left.merge(right, how="left", on=on, validate=validate, suffixes=suffixes)
 
+
