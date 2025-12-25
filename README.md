@@ -32,19 +32,6 @@ python scripts/run_etl.py
 The data flows through the project files as follows:
 
 ```text
-data/raw/                     # 1. Inputs (CSV)
-├── orders.csv
-└── users.csv
-scripts/run_etl.py            # 2. Pipeline Execution
-data/processed/               # 3. Outputs (Parquet)
-├── analytics_table.parquet   <-- Main analysis table
-├── orders_clean.parquet
-└── _run_meta.json
-notebooks/eda.ipynb           # 4. Analysis & Viz (Plotly)
-reports/                      # 5. Deliverables
-├── figures/*.png             <-- Exported Charts
-└── summary.md                <-- Executive Report
-
 .
 ├── data/
 │   ├── raw/                      # Input
