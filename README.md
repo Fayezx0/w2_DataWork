@@ -23,6 +23,13 @@ Process raw data into clean analytics tables:
 python scripts/run_etl.py
 ```
 
+You can also run individual stages:
+```powershell
+python scripts/run_day1_load.py    # load raw CSVs into interim staging
+python scripts/run_day2_clean.py   # cleaning & type conversions
+python scripts/run_day3_build_analytics.py  # build analytics tables
+```
+
 ### 3. Explore Results
 - **Interactive Analysis**: Open `notebooks/eda.ipynb` to see dynamic **Plotly** charts.
 - **Key Findings**: Read the [Summary Report](reports/summary.md).
@@ -43,7 +50,7 @@ The data flows through the project files as follows:
 │   └── processed/                # Output
 │       ├── analytics_table.parquet   <-- FINAL CLEAN TABLE
 │       ├── orders_clean.parquet
-│       └── _run_meta.json            <-- Run metadata (row counts, timestamps)
+│       └── _run_meta.json            <-- Metadata (row counts, timestamps)
 │
 ├── src/bootcamp_data/            # Core Logic
 │   ├── etl.py                        <-- Main Pipeline Logic
@@ -62,3 +69,4 @@ The data flows through the project files as follows:
 ```
 
 ---
+
